@@ -1,0 +1,6 @@
+source venv/bin/activate
+pip install pytesseract
+pip install opencv-python
+pip install pillow
+pip install numpy
+python -c "import cv2, pytesseract, PIL, numpy"
