@@ -8,9 +8,8 @@
 # Image.open() -< load image 
 # image_to_string() -> OCR
 #  return text -> give result back
-
-import pytesseract
 from PIL import Image
+import pytesseract
 
 def extract_text(image_path:str) -> str:
     """
@@ -19,7 +18,6 @@ def extract_text(image_path:str) -> str:
     image = Image.open(image_path)
     text = pytesseract.image_to_string(image)
     return text
-
 
 
 
